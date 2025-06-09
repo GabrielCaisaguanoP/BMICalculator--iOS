@@ -23,12 +23,12 @@ class ViewController: UIViewController {
 
     @IBAction func onWeightChanged(_ sender: UIStepper) {
         weight = Float(sender.value)
-        weigthtLabel.text = "\(weight) kg"
+        weigthtLabel.text = "\(Int(weight)) kg"
     }
     
     @IBAction func onHeightChanged(_ sender: UISlider) {
             height = sender.value
-        heightLabel.text = "\(height) cm"
+        heightLabel.text = "\(Int(height)) cm"
     }
     
     
@@ -36,7 +36,7 @@ class ViewController: UIViewController {
         let heightMeter: Float = height / Float (100)
         let bmi:Float = weight / pow(heightMeter, 2)
         //resultable.text = Your BMI is \String(format: "%2f, bmi))"
-        resultLabel.text = "\(String(format: "%2f", bmi))"
+        resultLabel.text = "\(String(format: "%.2f", bmi))"
     }
 }
 
