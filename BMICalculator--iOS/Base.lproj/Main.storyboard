@@ -67,7 +67,7 @@
                                 <color key="backgroundColor" systemColor="systemPinkColor"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SUD-MD-GBp">
-                                <rect key="frame" x="136" y="507" width="121" height="35"/>
+                                <rect key="frame" x="126" y="570" width="142" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Calcular IMC"/>
@@ -82,11 +82,19 @@
                                     <action selector="onHeightChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="mti-G2-4u0"/>
                                 </connections>
                             </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RMr-o7-TaU">
+                                <rect key="frame" x="16" y="472" width="361" height="42"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="descriptionLabel" destination="RMr-o7-TaU" id="zZj-Pd-Dx8"/>
                         <outlet property="heightLabel" destination="VBj-nf-WV2" id="IxN-cQ-QiJ"/>
                         <outlet property="resultLabel" destination="M3W-MT-jtd" id="cQS-Yz-kgw"/>
                         <outlet property="weigthtLabel" destination="mhk-xd-XQ1" id="uEx-3K-r99"/>
@@ -102,7 +110,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
